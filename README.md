@@ -277,15 +277,26 @@ I don't just study AI. I **build with it** — production-grade RAG systems, end
 ## 🛠️ &nbsp; Tech Stack
 
 <br/>
-```text
-Languages         Python  ·  SQL  ·  C++  ·  JavaScript
-AI / ML           Scikit-learn  ·  XGBoost  ·  LangChain  ·  FAISS  ·  OpenAI API
-GenAI             RAG  ·  LLMs  ·  Prompt Engineering  ·  Databricks  ·  Oracle OCI
-MLOps             MLflow  ·  Docker  ·  FastAPI  ·  GitHub Actions  ·  AWS (EC2, S3)
-Data              Pandas  ·  NumPy  ·  EDA  ·  SHAP  ·  Power BI  ·  Seaborn
-Databases         PostgreSQL  ·  MongoDB
-Full-Stack        React  ·  Node.js  ·  Express  ·  WebSockets  ·  REST APIs
-```
+**Core Languages**
+`Python` `SQL` `C++` `JavaScript`
+
+**AI & Machine Learning**
+`Scikit-learn` `XGBoost` `LangChain` `FAISS` `OpenAI API`
+
+**Generative AI**
+`RAG` `LLMs` `Prompt Engineering` `Databricks` `Oracle OCI`
+
+**MLOps & Deployment**
+`MLflow` `Docker` `FastAPI` `GitHub Actions` `AWS (EC2, S3)`
+
+**Data Science**
+`Pandas` `NumPy` `EDA` `SHAP` `Power BI` `Seaborn`
+
+**Databases**
+`PostgreSQL` `MongoDB`
+
+**Full-Stack**
+`React` `Node.js` `Express` `WebSockets` `REST APIs`
 
 <br/>
 
@@ -492,7 +503,7 @@ Worked inside a **live production data environment** — not a sandbox, not simu
 
 🏛️ &nbsp; **Arya College of Engineering** — Jaipur, India
 📐 &nbsp; B.Tech, Computer Science & Engineering
-📅 &nbsp; `Aug 2023 – Aug 2027` &nbsp;·&nbsp; CGPA: **7.78 / 10.0**
+📅 &nbsp; `Aug 2023 – Aug 2027`
 
 `Data Structures` &nbsp;·&nbsp; `Machine Learning` &nbsp;·&nbsp; `DBMS` &nbsp;·&nbsp;
 `Operating Systems` &nbsp;·&nbsp; `Statistics & Probability` &nbsp;·&nbsp;
@@ -548,25 +559,27 @@ Worked inside a **live production data environment** — not a sandbox, not simu
 ## 🗺️ &nbsp; 2026 Roadmap
 
 <br/>
-```
-  Q1   ✅ Oracle OCI GenAI Professional
-       ✅ Vanderbilt Prompt Engineering
-       ✅ Databricks Generative AI
-       🔄 System Design for ML infrastructure
+**Q1 2026**
+- ✅ Oracle OCI GenAI Professional
+- ✅ Vanderbilt Prompt Engineering
+- ✅ Databricks Generative AI
+- 🔄 System Design for ML infrastructure
 
-  Q2   ⬜ Kubernetes for model serving — K8s + KServe
-       ⬜ LLM evaluation frameworks — RAGAS + TruLens
-       ⬜ Advanced RAG patterns — HyDE · FLARE · Self-RAG
-       ⬜ First open-source contribution — MLOps project
+**Q2 2026**
+- ⬜ Kubernetes for model serving (K8s + KServe)
+- ⬜ LLM evaluation frameworks (RAGAS + TruLens)
+- ⬜ Advanced RAG patterns (HyDE · FLARE · Self-RAG)
+- ⬜ First open-source contribution (MLOps project)
 
-  Q3   🎯 Land Summer / Fall 2026 Data Science internship
-       ⬜ Multi-agent LLM system with tool use
-       ⬜ Publish first technical article
+**Q3 2026**
+- 🎯 Land Summer / Fall 2026 Data Science internship
+- ⬜ Multi-agent LLM system with tool use
+- ⬜ Publish first technical article
 
-  Q4   ⬜ AWS Solutions Architect foundations
-       ⬜ Distributed systems fundamentals
-       ⬜ ML system design interview preparation
-```
+**Q4 2026**
+- ⬜ AWS Solutions Architect foundations
+- ⬜ Distributed systems fundamentals
+- ⬜ ML system design interview preparation
 
 <br/>
 
