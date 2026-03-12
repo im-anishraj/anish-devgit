@@ -36,7 +36,9 @@
 
 ## `$ whoami`
 
-<img align="right" width="340" src="https://raw.githubusercontent.com/abhisheknaiidu/abhisheknaiidu/master/code.gif" alt="coding gif"/>
+<table>
+<tr>
+<td width="60%" valign="top">
 
 ```python
 class AnishRaj:
@@ -65,7 +67,12 @@ class AnishRaj:
         return "Let's build something that ships. 🚀"
 ```
 
-<br clear="right"/>
+</td>
+<td width="40%" align="center" valign="middle">
+<img src="https://raw.githubusercontent.com/abhisheknaiidu/abhisheknaiidu/master/code.gif" alt="coding gif" width="340"/>
+</td>
+</tr>
+</table>
 
 ---
 
