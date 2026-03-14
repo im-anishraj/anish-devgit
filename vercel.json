@@ -11,16 +11,22 @@
     {
       "source": "/api/(.*)",
       "headers": [
-        { "key": "Access-Control-Allow-Origin", "value": "*" },
-        { "key": "Access-Control-Allow-Methods", "value": "GET" }
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        },
+        {
+          "key": "Access-Control-Allow-Methods",
+          "value": "GET"
+        }
       ]
     }
   ],
   "env": {
-    "GITHUB_USERNAME": "@github_username",
-    "DEVOS_MISSION":   "@devos_mission",
-    "DEVOS_LEARNING":  "@devos_learning",
-    "DEVOS_SIGNAL":    "@devos_signal",
-    "DEVOS_TAGLINE":   "@devos_tagline"
+    "GITHUB_USERNAME": "anish-devgit",
+    "DEVOS_MISSION": "Build powerful open source tools",
+    "DEVOS_LEARNING": "AI + Full Stack + Systems",
+    "DEVOS_SIGNAL": "Building in public",
+    "DEVOS_TAGLINE": "Code. Build. Dominate."
   }
 }
