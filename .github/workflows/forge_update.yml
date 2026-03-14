@@ -1,0 +1,94 @@
+name: FORGE — Update Developer Identity
+
+on:
+  schedule:
+    # Runs daily at midnight UTC — adjust in forge.yml
+    - cron: "0 0 * * *"
+  
+  push:
+    branches: [main]
+    paths:
+      - "config/forge.yml"   # Also trigger when you update your config
+  
+  workflow_dispatch:          # Allow manual trigger from GitHub UI
+    inputs:
+      force_reclassify:
+        description: "Force archetype re-classification"
+        required: false
+        default: "false"
+        type: boolean
+
+permissions:
+  contents: write             # Needed to commit the updated README
+
+jobs:
+  forge-update:
+    name: "◈ FORGE Update"
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      # ── Setup ─────────────────────────────────────────────
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
+
+      - name: Install Dependencies
+        run: |
+          pip install --upgrade pip
+          pip install pyyaml requests
+
+      # ── Generate ──────────────────────────────────────────
+      - name: Run FORGE Generator
+        env:
+          FORGE_TOKEN: ${{ secrets.FORGE_TOKEN }}
+        run: |
+          echo "◈ Starting FORGE update pipeline..."
+          python scripts/generate_readme.py
+          echo "◈ Generation complete."
+
+      # ── Commit ────────────────────────────────────────────
+      - name: Check for Changes
+        id: changes
+        run: |
+          git diff --quiet && echo "changed=false" >> $GITHUB_OUTPUT || echo "changed=true" >> $GITHUB_OUTPUT
+
+      - name: Commit and Push Updated README
+        if: steps.changes.outputs.changed == 'true'
+        run: |
+          git config user.name "FORGE Bot"
+          git config user.email "forge-bot@users.noreply.github.com"
+          git add README.md assets/generated/
+          git commit -m "◈ FORGE: Auto-update developer identity [$(date -u '+%Y-%m-%d %H:%M UTC')]
+
+          - Refreshed contribution pulse
+          - Updated mission log  
+          - Rechecked archetype classification
+          
+          [skip ci]"
+          git push
+
+      - name: No Changes Detected
+        if: steps.changes.outputs.changed == 'false'
+        run: echo "◈ No changes detected — profile is already up to date."
+
+      # ── Summary ───────────────────────────────────────────
+      - name: Generate Job Summary
+        if: always()
+        run: |
+          echo "## ◈ FORGE Update Summary" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "| Field | Value |" >> $GITHUB_STEP_SUMMARY
+          echo "|:------|:------|" >> $GITHUB_STEP_SUMMARY
+          echo "| Run Time | $(date -u) |" >> $GITHUB_STEP_SUMMARY
+          echo "| Trigger | ${{ github.event_name }} |" >> $GITHUB_STEP_SUMMARY
+          echo "| Changes Committed | ${{ steps.changes.outputs.changed }} |" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "*Built by [FORGE](https://github.com/${{ github.repository }}) — The Developer Identity Engine*" >> $GITHUB_STEP_SUMMARY

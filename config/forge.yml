@@ -1,0 +1,78 @@
+# ╔══════════════════════════════════════════════════════════╗
+# ║            FORGE — Developer Identity Engine            ║
+# ║              Your one config to rule them all           ║
+# ╚══════════════════════════════════════════════════════════╝
+
+# ─── IDENTITY ───────────────────────────────────────────────
+identity:
+  github_username: "anish-devgit"           # Your GitHub handle
+  name: "Anish Raj"                         # Display name
+  tagline: "Data Scientist | AI Engineer | MLOps Builder"
+  timezone: "Asia/Kolkata"                  # For commit-time analysis
+  location: "Jaipur, India"
+
+# ─── STATUS ─────────────────────────────────────────────────
+status:
+  availability: "open_to_collaborate"       # open_to_collaborate | deep_work | exploring | on_leave
+  current_mission: "Building production AI systems from scratch"
+  looking_for: "Summer / Fall 2026 Data Science APIs internships"
+
+# ─── FORGE FEATURES ─────────────────────────────────────────
+features:
+  archetype_engine: true          # Auto-classify your developer archetype
+  pulse_visualization: true       # Animated contribution pulse SVG
+  mission_log: true               # Auto-updated recent activity log
+  skill_radar: true               # SVG skill radar chart
+  tech_timeline: true             # Language evolution over years
+  night_owl_badge: true           # Show if you code more at night
+  streak_display: true            # Current commit streak
+  karma_score: true               # Open Source Karma metric
+
+# ─── TECH STACK (manual layer — auto-detection also runs) ───
+tech:
+  primary_languages: ["Python", "SQL", "C++", "JavaScript"]
+  frameworks: ["React", "FastAPI", "Express", "Node.js"]
+  tools: ["Docker", "LangChain", "MLflow", "FAISS", "Git"]
+  databases: ["PostgreSQL", "MongoDB"]
+  cloud: ["AWS", "Oracle OCI", "Databricks"]
+  currently_learning: ["Kubernetes", "Advanced RAG patterns"]
+
+# ─── SOCIAL LINKS ────────────────────────────────────────────
+links:
+  blog: ""                    # Your blog URL
+  twitter: ""                 # @handle
+  linkedin: "er-anish"
+  website: "https://github.com/anish-devgit"
+  youtube: ""
+  devto: ""
+
+# ─── VISUAL THEME ────────────────────────────────────────────
+theme:
+  # Options: cyberpunk | terminal | arctic | solarflare | obsidian | aurora
+  preset: "cyberpunk"
+  # Override specific colors (or leave blank to use preset)
+  accent_primary: ""           # e.g. "#00FF9F"
+  accent_secondary: ""         # e.g. "#BD00FF"
+  background: ""               # e.g. "#0D0D0D"
+
+# ─── PINNED PROJECTS (override GitHub's default 6) ───────────
+pinned_projects:
+  - repo: "anish-devgit/rag-engine"
+    emoji: "🧠"
+    custom_description: "Production document Q&A system over 500+ pages"
+  - repo: "anish-devgit/mlops-pipeline"
+    emoji: "⚙️"
+    custom_description: "End-to-End MLOps pipeline on AWS"
+
+# ─── FORGE NETWORK ───────────────────────────────────────────
+# Developers you've learned from or collaborated with closely
+# (purely aesthetic — shows your network, not endorsements)
+network:
+  mentors: []
+  collaborators: []
+  following_closely: []
+
+# ─── SCHEDULE ────────────────────────────────────────────────
+update:
+  frequency: "daily"           # hourly | daily | weekly
+  update_hour_utc: 0           # 0 = midnight UTC
