@@ -533,14 +533,14 @@ Worked inside a **live production data environment** — not a sandbox, not simu
 <br/>
 
 <div align="center">
-```
+<pre><code>
   Production beats Jupyter.        A model only counts when it ships.
   Measure everything.              Opinions are cheap. Metrics aren't.
   Read the implementation.         The paper alone is never enough.
   Document as you build.           Future-you will thank present-you.
   Simple systems win.              Clever code is a liability.
   Build in public.                 The compounding is real.
-```
+</code></pre>
 
 </div>
 
@@ -581,18 +581,11 @@ Worked inside a **live production data environment** — not a sandbox, not simu
 - ⬜ Distributed systems fundamentals
 - ⬜ ML system design interview preparation
 
-<br/>
-
----
-
-<br/>
-
-<!--
+<br/><!--
   ╔══════════════════════════════════════════════════════╗
   ║                CONNECT                               ║
   ╚══════════════════════════════════════════════════════╝
 -->
-
 ## 🤝 &nbsp; Let's Connect
 
 <br/>
